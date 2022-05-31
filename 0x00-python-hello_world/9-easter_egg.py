@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-import this
+f = open("zen.txt", "r")
+print(f.read())
+f.close()

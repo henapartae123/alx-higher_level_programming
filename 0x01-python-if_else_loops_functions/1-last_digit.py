@@ -12,8 +12,8 @@ if sign == -1:
 
 print("Last digit of {} is ".format(number), end="")
 if lastdigit > 5:
-    print("{} and is greater than 5".format(lastdigit),"\n")
+    print("{} and is greater than 5".format(lastdigit), "\n")
 elif lastdigit == 0:
-    print("{} and is 0".format(lastdigit),"\n")
+    print("{} and is 0".format(lastdigit), "\n")
 else:
-    print("{} and is less than 6 and not 0".format(lastdigit),"\n")
+    print("{} and is less than 6 and not 0".format(lastdigit), "\n")

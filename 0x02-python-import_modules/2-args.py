@@ -8,7 +8,7 @@ if __name__ == "__main__":
         print("{} arguments.".format(argv_count))
     elif argv_count == 1:
         print("{} argument:".format(argv_count))
-        print("{}: {:s}".format(index, sys.argv[1]))
+        print("{}: {}".format(index, sys.argv[1]))
     else:
         print("{} arguments:".format(argv_count))
         while index <= argv_count:

@@ -99,7 +99,21 @@ class Rectangle :
         Returns: The perimeter of the rectangle
 
         """
-        if self.__width & self .__height is 0:
-            self = 0
 
         return ((self.__width) + (self.__height)) * 2
+
+    def __str__(self):
+        """prints the retangle
+        Returns:
+            None
+        
+        """
+
+        str = ""
+        if self.__width == 0 or self.__height == 0:
+            return
+        for row in range(self.__height):
+            for col in range(self.__width):
+                str = str + '#'
+            str = str + '\n'
+        return str[:-1]

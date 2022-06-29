@@ -115,8 +115,8 @@ class Rectangle :
         str = ""
         if self.__width == 0 or self.__height == 0:
             return
-        for row in range(self.__height):
-            for col in range(self.__width):
+        for i in range(self.__height):
+            for j in range(self.__width):
                 str = str + '#'
             str = str + '\n'
         return str[:-1]

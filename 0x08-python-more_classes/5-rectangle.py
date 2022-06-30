@@ -124,9 +124,11 @@ class Rectangle :
     def __repr__(self):
         """Rerurn string of the rectangle
         """
+        
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
     
     def __del__(self):
         """Delete instance of the rectangle
         """
+
         print("Bye rectangle...")

@@ -120,3 +120,8 @@ class Rectangle :
                 str = str + '#'
             str = str + '\n'
         return str[:-1]
+
+    def __repr__(self):
+        """Rerurn string of the rectangle
+        """
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)

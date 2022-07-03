@@ -14,7 +14,7 @@ def matrix_divided(matrix, div):
         TypeError: If the matrix contains rows of different sizes.
         TypeError: If div is not an int or float.
         ZeroDivisionError: If div is 0.
-        
+
     Returns:
         A new matrix representing the result of the division.
     """
@@ -36,3 +36,4 @@ def matrix_divided(matrix, div):
             line[element_index] = round(element/div, 2)
 
     return matrix_new
+    

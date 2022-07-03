@@ -1,0 +1,66 @@
+The ``3.say_my_name`` module
+==========================
+
+This module defines a matrix division function ``say_my_name(first_name, last_name="")``.
+
+Using ``say_my_name``
+---------------------
+
+Import file:
+
+    >>> say_my_name = __import__("3-say_my_name").say_my_name
+
+::
+
+    >>> say_my_name("John", "Smith")
+    My name is John Smith
+
+::
+
+    >>> say_my_name("Bob")
+    My name is Bob 
+
+The function expects first_name and last_name to be strings
+::
+
+    >>> say_my_name("Bob", 12)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+::
+
+    >>> say_my_name(12)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+::
+
+    >>> say_my_name(12, "Bob")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+::
+
+    >>> say_my_name([], 10)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+::
+
+    >>> say_my_name("string", None)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+The function expects 2 arguments(at least one argument)
+
+::
+
+    >>> say_my_name("arg1", "arg2", "arg3")
+    Traceback (most recent call last):
+    TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
+
+::
+
+    >>> say_my_name()
+    Traceback (most recent call last):
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'

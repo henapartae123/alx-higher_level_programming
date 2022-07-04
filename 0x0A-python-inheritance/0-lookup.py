@@ -13,4 +13,4 @@ def lookup(obj):
         list: list of attributes and members
         
     """
-    return (dir(obj))
+    return dir(obj)

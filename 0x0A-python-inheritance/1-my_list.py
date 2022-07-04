@@ -6,12 +6,12 @@ Returns a list object
 class MyList(list):
 
     """a subclass of list"""
-    
+
     def __init__(self):
         """initializes the object"""
         super().__init__()
 
-    """sorted List"""
+        """sorted List"""
     def print_sorted(self):
         """
         Returns: 

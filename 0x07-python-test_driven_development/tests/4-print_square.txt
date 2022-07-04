@@ -1,7 +1,7 @@
 The ``4.print_square`` module
 ===========================
 
-This module defines a matrix division function ``print_square(size)``.
+This module defines a square printing function ``print_square(size)``.
 
 Using ``print_square``
 ----------------------

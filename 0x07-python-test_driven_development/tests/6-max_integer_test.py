@@ -3,6 +3,8 @@
 """Unittests for max_integer([..])."""
 
 import unittest
+import random
+
 max_integer = __import__('6-max_integer').max_integer
 
 
@@ -60,3 +62,4 @@ class TestMaxInteger(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+    

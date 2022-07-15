@@ -2,6 +2,7 @@
 '''Base class module'''
 from json import dumps
 from json import loads
+import csv
 
 class Base:
     '''Base class'''
@@ -52,7 +53,7 @@ class Base:
 
         from models.rectangle import Rectangle
         from models.square import Square
-        
+
         if cls is Rectangle:
             new = Rectangle(1, 1)
         elif cls is Square:
@@ -61,3 +62,23 @@ class Base:
             new = None
         new.update(**dictionary)
         return new
+    
+    @classmethod
+    def load_from_file_csv(cls):
+        '''retrieves a list of instances from the csv file'''
+
+        from models.rectangle import Rectangle
+        read = []
+        with open('{}.csv'.format(cls.__name__), 'r', newline='',
+                  encoding='utf-8') as content:
+            reader = csv.reader(content)
+            for row in reader:
+                row = [int(r) for r in row]
+                if cls is Rectangle:
+                    string = {"id": row[0], "width": row[1], "height": row[2],
+                              "x": row[3], "y": row[4]}
+                else:
+                    string = {"id": row[0], "size": row[1],
+                              "x": row[2], "y": row[3]}
+                read.append(cls.create(**string))
+        return read

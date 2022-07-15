@@ -64,7 +64,7 @@ class Base:
         return new
     
     @classmethod
-    def load_from_file_csv(cls):
+    def load_from_file(cls):
         '''retrieves a list of instances from the csv file'''
 
         from models.rectangle import Rectangle

@@ -26,7 +26,6 @@ class Rectangle(Base):
     def width(self, value):
         '''set width of the rectangle'''
         
-        self.validate_integer("width", value, False)
         self.__width = value
 
     @property
@@ -39,7 +38,6 @@ class Rectangle(Base):
     def height(self, value):
         '''set height of the rectangle'''
         
-        self.validate_integer("height", value, False)
         self.__height = value
 
     @property
@@ -52,7 +50,6 @@ class Rectangle(Base):
     def x(self, value):
         '''set x of the rectangle'''
         
-        self.validate_integer("x", value)
         self.__x = value
 
     @property
@@ -65,5 +62,5 @@ class Rectangle(Base):
     def y(self, value):
         '''set y of a rectangle'''
         
-        self.validate_integer("y", value)
         self.__y = value
+

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Rectangle class module - tests located in tests/test_base.py'''
+'''Rectangle class module'''
 from models.base import Base
 
 
@@ -18,46 +18,46 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        '''get width of a rectangle'''
+        '''get width of the rectangle'''
 
         return self.__width
 
     @width.setter
     def width(self, value):
-        '''set width of a rectangle'''
+        '''set width of the rectangle'''
         
         self.validate_integer("width", value, False)
         self.__width = value
 
     @property
     def height(self):
-        '''get height of a rectangle'''
+        '''get height of the rectangle'''
         
         return self.__height
 
     @height.setter
     def height(self, value):
-        '''set height of a rectangle'''
+        '''set height of the rectangle'''
         
         self.validate_integer("height", value, False)
         self.__height = value
 
     @property
     def x(self):
-        '''get x of a rectangle'''
+        '''get x of the rectangle'''
         
         return self.__x
 
     @x.setter
     def x(self, value):
-        '''set x of a rectangle'''
+        '''set x of the rectangle'''
         
         self.validate_integer("x", value)
         self.__x = value
 
     @property
     def y(self):
-        '''get y of a rectangle'''
+        '''get y of the rectangle'''
         
         return self.__y
 
@@ -67,4 +67,3 @@ class Rectangle(Base):
         
         self.validate_integer("y", value)
         self.__y = value
-        

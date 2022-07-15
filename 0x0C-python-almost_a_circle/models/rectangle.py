@@ -89,3 +89,9 @@ class Rectangle(Base):
         display = '\n' * self.y + \
               (' ' * self.x + '#' * self.width + '\n') * self.height
         print(display, end='')
+
+    def __str__(self):
+        '''str info about a rectangle'''
+        return '[Rectangle] ({}) {}/{} - {}/{}'. \
+            format(self.id, self.x, self.y, self.width,self.height)
+                

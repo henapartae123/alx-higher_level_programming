@@ -1,6 +1,6 @@
 -- lists all cities in the databse hbtn_0d_usa in ascending order
-SELECT c.`id`, c.`name`, s.`name`
+SELECT cities.`id`, cities.`name`, states.`name`
  FROM `cities` AS cities
-       INNER JOIN `states` AS s
-       ON c.`state_id` = s.`id`
- ORDER BY c.`id`;
+       INNER JOIN `states` AS states
+       ON cities.`state_id` = states.`id`
+ ORDER BY cities.`id`;

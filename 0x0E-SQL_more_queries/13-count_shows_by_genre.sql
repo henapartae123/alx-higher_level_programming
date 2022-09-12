@@ -8,4 +8,3 @@ SELECT genres.`name` AS `genre`,
        ON genres.`id` = tv_shows.`genre_id`
  GROUP BY genres.`name`
  ORDER BY `number_of_shows` DESC;
- 

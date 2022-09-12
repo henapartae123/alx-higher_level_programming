@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ script that lists all states from the database hbtn_0e_0_usa with a name
-starting with N
+starting with N (upper N)
 """
 
 import MySQLdb

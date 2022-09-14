@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" list the first State object from a database
+"""
+script that changes the name of the State object from the database
 """
 
 import sqlalchemy
@@ -8,6 +9,7 @@ from sqlalchemy.orm import sessionmaker
 from sys import argv
 from model_state import Base, State
 
+
 if __name__ == "__main__":
     eng = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(argv[1],
                                                                     argv[2],
@@ -15,9 +17,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(eng)
     Session = sessionmaker(bind=eng)
     session = Session()
-    first_state = session.query(State).order_by(State.id).first()
-    if first_state is not None:
-        print("{}: {}".format(first_state.id, first_state.name))
-    else:
-        print("Nothing")
+    state = session.query(State).filter_by(id=2).first()
+    state.name = "New Mexico"
+    session.commit()
     session.close()

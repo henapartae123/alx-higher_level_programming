@@ -9,6 +9,7 @@ if __name__ == '__main__':
     from model_state import Base, State
     from model_city import City
 
+
     username = '{}'.format(argv[1])
     password = '{}'.format(argv[2])
     db_name = '{}'.format(argv[3])

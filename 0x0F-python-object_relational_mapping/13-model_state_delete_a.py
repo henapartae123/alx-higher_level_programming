@@ -11,6 +11,7 @@ if __name__ == '__main__':
     from sqlalchemy.orm.session import sessionmaker, Session
     from model_state import Base, State
 
+
     username = argv[1]
     password = argv[2]
     db_name = argv[3]

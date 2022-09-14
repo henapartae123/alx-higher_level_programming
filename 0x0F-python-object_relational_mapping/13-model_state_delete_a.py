@@ -5,12 +5,10 @@ the letter a from the database hbtn_0e_6_usa
 """
 
 if __name__ == '__main__':
-
     from sys import argv
     from sqlalchemy import create_engine
     from sqlalchemy.orm.session import sessionmaker, Session
     from model_state import Base, State
-
 
     username = argv[1]
     password = argv[2]

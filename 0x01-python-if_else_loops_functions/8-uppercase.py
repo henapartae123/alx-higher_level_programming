@@ -5,5 +5,5 @@ def uppercase(str):
         if ord(char) >= 97 and ord(char) <= 122:
             newstr = chr(ord(char) - 32)
         else:
-            newstr = char
-        print("{}".format(newstr), end="")
+            newstr += char
+        print("{}".format(newstr))

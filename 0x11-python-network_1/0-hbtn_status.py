@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""
-    A python script that fetches URL using 'urlib'
-"""
+"""A python script that fetches URL using 'urlib'"""
+
 
 if __name__ == "__main__":
     from urllib.request import urlopen

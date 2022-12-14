@@ -1,15 +1,16 @@
 #!/usr/bin/python3
 """A class rectangle that defines a rectangle"""
 
-class Rectangle :
+
+class Rectangle:
     """A rectangle
-    
+
     Attributes:
         __width (int): width of the rectangle
 
     """
 
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         """Initializes the rectangle
 
         Args:

@@ -1,15 +1,16 @@
 #!/usr/bin/python3
 """A class rectangle that defines a rectangle"""
 
-class Rectangle :
+
+class Rectangle:
     """A rectangle
-    
+
     Attributes:
         __width (int): width of the rectangle
 
     """
 
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         """Initializes the rectangle
 
         Args:
@@ -86,22 +87,22 @@ class Rectangle :
 
     def area(self):
         """calculates the area of the rectangle
-        
+
         Returns: The area of the rectangle
 
         """
 
         return ((self.__width) * (self.__height))
-    
+
     def perimeter(self):
         """calculates the perimeter of the rectangle
-        
+
         Returns: The perimeter of the rectangle
 
         """
         if self.__width == 0 or self.__height == 0:
             return 0
-        
+
         return ((self.__width) + (self.__height)) * 2
 
     def __str__(self):
@@ -109,7 +110,7 @@ class Rectangle :
 
         Returns:
             None
-        
+
         """
 
         str = ""

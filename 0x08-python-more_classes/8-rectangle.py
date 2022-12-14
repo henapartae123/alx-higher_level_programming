@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """A class rectangle that defines a rectangle"""
 
-class Rectangle :
+
+class Rectangle:
     """A rectangle
-    
+
     Attributes:
         __width (int): width of the rectangle
 
@@ -12,7 +13,7 @@ class Rectangle :
     number_of_instances = 0
     print_symbol = '#'
 
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         """Initializes the rectangle
 
         Args:
@@ -90,22 +91,22 @@ class Rectangle :
 
     def area(self):
         """calculates the area of the rectangle
-        
+
         Returns: The area of the rectangle
 
         """
 
         return ((self.__width) * (self.__height))
-    
+
     def perimeter(self):
         """calculates the perimeter of the rectangle
-        
+
         Returns: The perimeter of the rectangle
 
         """
         if self.__width == 0 or self.__height == 0:
             return 0
-        
+
         return ((self.__width) + (self.__height)) * 2
 
     def __str__(self):
@@ -113,7 +114,7 @@ class Rectangle :
 
         Returns:
             None
-        
+
         """
 
         str = ""
@@ -130,14 +131,14 @@ class Rectangle :
         """
 
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
-    
+
     def __del__(self):
         """Delete instance of the rectangle
         """
 
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
-    
+
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """calculate which is the largest rectangle
@@ -155,4 +156,3 @@ class Rectangle :
         if rect_1.area() < rect_2.area():
             return rect_2
         return rect_1
-        

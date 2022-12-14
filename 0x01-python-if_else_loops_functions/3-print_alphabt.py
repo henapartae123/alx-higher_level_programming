@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-for i in range(97,123):
-    if chr(i) == 113 or chr(i) == 101:
-        continue
-    print ("{}".format(chr(i)), end ="")
+for c in range(ord('a'), ord('z') + 1):
+    if c != ord('e') and c != ord('q'):
+        print("{:c}".format(c), end="")

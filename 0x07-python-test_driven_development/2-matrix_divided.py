@@ -8,7 +8,7 @@ def matrix_divided(matrix, div):
     Args:
         matrix (list): A list of lists of ints or floats.
         div (int/float): The divisor.
-        
+
     Raises:
         TypeError: If the matrix contains non-numbers.
         TypeError: If the matrix contains rows of different sizes.
@@ -36,4 +36,3 @@ def matrix_divided(matrix, div):
             line[element_index] = round(element/div, 2)
 
     return matrix_new
-    

@@ -1,15 +1,16 @@
 #!/usr/bin/python3
 """A class square that defines a square"""
 
-class Square :
+
+class Square:
     """A square
-    
+
     Attributes:
         __size (int): size of the square
 
     """
 
-    def __init__(self, size = 0, position = (0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """Initializes the square
 
         Args:
@@ -23,12 +24,12 @@ class Square :
 
     def area(self):
         """calculates the area of the square
-        
+
         Returns: The area of the square
 
         """
 
-        return (self.__size) **2
+        return (self.__size) ** 2
 
     @property
     def size(self):
@@ -60,12 +61,12 @@ class Square :
                 raise ValueError("size must be >= 0")
             else:
                 self.__size = value
-    
+
     def my_print(self):
         """prints the square
         Returns:
             None
-        
+
         """
 
         if self.__size == 0:
@@ -82,7 +83,7 @@ class Square :
         """getter of __position
         Returns:
             The position of the square in 2D space
-            
+
         """
         return self.__position
 

@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-import hidden_4
-i = 0
+
+
 if __name__ == '__main__':
-    list = dir(hidden_4)
-    newlist = sorted(list)
-    while i < len(newlist):
-        if newlist[i][0] != '_':
-            print(newlist[i])
-        i += 1
+    import hidden_4
+
+    h_dir_name_list = dir(hidden_4)
+    for k in h_dir_name_list:
+        if not k.startswith('__'):
+            print('{:s}'.format(k))
